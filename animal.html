@@ -53,6 +53,11 @@ integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4Qz
         }
 
         resultD.innerHTML = `Correct counts: ${correct}, Wrong counts: ${wrong}`;
+        if(wrong>correct)
+        {
+            alert("Sorry, too many wrong guesses.");
+            document.getElementById("demo").innerHTML =  "Sorry, too many wrong guesses.";
+        }
     }
     var useImage=1;
     function selectImage()
